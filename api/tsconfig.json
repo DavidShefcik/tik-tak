@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2020"],
+    "target": "ES3",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "skipDefaultLibCheck": true
+  },
+  "include": ["./src"]
+}
