@@ -25,6 +25,17 @@ services:
       - ./api/rest:/api/rest:rw
     depends_on:
       - db
+  ws:
+    container_name: "tik-tack-ws"
+    command: mix phx.server
+    build:
+      context: ./api/ws
+    ports:
+      - 4000:4000
+    volumes:
+      - ./api/ws:/api/ws:rw
+    depends_on:
+      - db
 
 volumes:
   db: {}
